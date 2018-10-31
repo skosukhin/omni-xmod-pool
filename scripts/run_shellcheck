@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# This file is released under terms of BSD license
+# See LICENSE file for more information
+#
+# Continuous integration script to check all the bash scripts of the project.
+# It uses shellcheck to check the consitency of the scripts.
+#
+# author: clementval
+#
+
+# Check that it is run from ROOT
+if [ ! -f LICENSE ] ; then
+    echo "The script has to be executed from the root directory ./script/run_shellcheck"
+    exit 1
+fi
+
+# Check basic scripts
+if ! shellcheck ./scripts/test_all_modules; then
+  echo 'Script ./scripts/test_all_modules failed!'
+  exit 1
+fi

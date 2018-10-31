@@ -1,9 +1,22 @@
 #!/bin/bash
+#
+# This file is released under terms of BSD license
+# See LICENSE file for more information
+#
+# Test all modules file present in the repository. Create a temporary module
+# that use the corresponding module file and pass it to OMNI.
+#
+# author: clementval
+#
+
+# Check that it is run from ROOT
+if [ ! -f LICENSE ] ; then
+    echo "The script has to be executed from the root directory ./script/run_shellcheck"
+    exit 1
+fi
 
 ffront="./omni-compiler/F-FrontEnd/src/F_Front"
 tmpmod="_testmodule.f90"
-
-
 
 find . -name '*.xmod' ! -name 'mod1.xmod' ! -path '*omni-compiler*' > tmp
 while IFS= read -r file
