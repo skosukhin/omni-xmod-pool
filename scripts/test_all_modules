@@ -1,0 +1,21 @@
+#!/bin/bash
+
+ffront="./omni-compiler/F-FrontEnd/src/F_Front"
+tmpmod="_testmodule.f90"
+
+
+
+find . -name '*.xmod' ! -name 'mod1.xmod' ! -path '*omni-compiler*' > tmp
+while IFS= read -r file
+do
+  filename=$(basename -- "${file}")
+  moduledir=$(dirname "${file}")
+  modulename="${filename%.*}"
+
+  echo "module mod1" > ${tmpmod}
+  echo " use ${modulename}" >> ${tmpmod}
+  echo "end module mod1" >> ${tmpmod}
+
+  ${ffront} -M "${moduledir}" "${tmpmod}"
+done < tmp
+rm tmp
