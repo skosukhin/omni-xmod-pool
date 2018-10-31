@@ -1,3 +1,4 @@
 *.o
 *.mod
 **/mod1.xmod
+*.f90
