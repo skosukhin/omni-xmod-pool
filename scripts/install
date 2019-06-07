@@ -1,0 +1,47 @@
+#!/bin/bash
+#
+# This file is released under terms of BSD license
+# See LICENSE file for more information
+#
+# Install all xmod in the pool to a defined location. 
+#
+# author: clementval
+#
+
+# Check that it is run from ROOT
+if [ ! -f LICENSE ] ; then
+    echo "The script has to be executed from the root directory ./script/install"
+    exit 1
+fi
+
+install_path=""
+
+while [[ $# -gt 0 ]]; do
+key="$1"
+  case $key in
+    -i|--install)
+    install_path="$2"
+    shift
+    shift
+    ;;
+    *) shift
+    ;;
+  esac
+done
+
+if [[ ${install_path} == "" ]]; then
+  echo "Install path must be provided!"
+  exit 1
+fi
+
+# shellcheck disable=SC2061,SC2086,SC2035
+find . -name '*.xmod' ! -name 'mod1.xmod' ! -path '*omni-compiler*' ! -path *${install_path}* > tmp
+while IFS= read -r file
+do
+  moduledir=$(dirname "${file}")
+  moduledir=${moduledir#"./"}
+  echo "Install ${file} in ${install_path}/${moduledir}"
+  mkdir -p "${install_path}/${moduledir}"
+  cp "${file}" "${install_path}/${moduledir}"
+done < tmp
+rm tmp
