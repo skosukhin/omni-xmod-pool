@@ -1,0 +1,1463 @@
+<OmniFortranModule version="1.0">
+  <name>self_assert</name>
+  <depends>
+    <name>iso_fortran_env</name>
+    <name>self_object</name>
+  </depends>
+  <typeTable>
+    <FstructType type="S7f9fc74094a0" imported_id="S7fc801d06890">
+      <symbols>
+      </symbols>
+    </FstructType>
+    <FbasicType type="I7f9fc74230e0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc74232f0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7423550" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc74237b0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7423a30" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7423cb0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7423f30" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc74241b0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7424430" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc74246b0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7424930" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7424bb0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7424e30" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc74250b0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7425330" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc74255b0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7425830" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7425ab0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7425d30" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7425fb0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7426230" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc74264b0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7429f00" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc7429db0" is_parameter="true" ref="I7f9fc7429f00"/>
+    <FbasicType type="A7f9fc7426730" is_parameter="true" ref="I7f9fc7429db0">
+      <indexRange>
+        <lowerBound>
+          <FintConstant type="Fint">1</FintConstant>
+        </lowerBound>
+        <upperBound>
+          <FintConstant type="Fint">4</FintConstant>
+        </upperBound>
+      </indexRange>
+    </FbasicType>
+    <FbasicType type="I7f9fc742a2f0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc742a1a0" is_parameter="true" ref="I7f9fc742a2f0"/>
+    <FbasicType type="A7f9fc74269b0" is_parameter="true" ref="I7f9fc742a1a0">
+      <indexRange>
+        <lowerBound>
+          <FintConstant type="Fint">1</FintConstant>
+        </lowerBound>
+        <upperBound>
+          <FintConstant type="Fint">4</FintConstant>
+        </upperBound>
+      </indexRange>
+    </FbasicType>
+    <FbasicType type="I7f9fc742a6e0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc742a590" is_parameter="true" ref="I7f9fc742a6e0"/>
+    <FbasicType type="A7f9fc7426c30" is_parameter="true" ref="I7f9fc742a590">
+      <indexRange>
+        <lowerBound>
+          <FintConstant type="Fint">1</FintConstant>
+        </lowerBound>
+        <upperBound>
+          <FintConstant type="Fint">3</FintConstant>
+        </upperBound>
+      </indexRange>
+    </FbasicType>
+    <FbasicType type="I7f9fc7426eb0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="C7f9fc7417410" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="I7f9fc7427130" is_parameter="true" ref="Fint"/>
+    <FbasicType type="C7f9fc7418000" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">8</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="I7f9fc74273b0" is_parameter="true" ref="Fint"/>
+    <FbasicType type="C7f9fc7418a50" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="I7f9fc7427630" is_parameter="true" ref="Fint"/>
+    <FbasicType type="C7f9fc74194a0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">9</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="I7f9fc742b010" is_parameter="true" ref="Fint"/>
+    <FbasicType type="I7f9fc742aec0" is_parameter="true" ref="I7f9fc742b010"/>
+    <FbasicType type="A7f9fc74278b0" is_parameter="true" ref="I7f9fc742aec0">
+      <indexRange>
+        <lowerBound>
+          <FintConstant type="Fint">1</FintConstant>
+        </lowerBound>
+        <upperBound>
+          <FintConstant type="Fint">4</FintConstant>
+        </upperBound>
+      </indexRange>
+    </FbasicType>
+    <FfunctionType type="F7f9fc7427bf0" return_type="Fcharacter">
+      <params>
+      </params>
+    </FfunctionType>
+    <FfunctionType type="F7f9fc7427f30" return_type="Fcharacter">
+      <params>
+      </params>
+    </FfunctionType>
+    <FfunctionType type="F7f9fc743cc00" return_type="Flogical" is_recursive="true">
+      <params>
+        <name type="S7f9fc743d210" imported_id="S7fdf4ad12810">this</name>
+        <name type="S7f9fc743d420" imported_id="S7fdf4ad12e10">that</name>
+      </params>
+    </FfunctionType>
+    <FbasicType type="S7f9fc743d210" imported_id="S7fdf4ad12810" intent="in" is_class="true"/>
+    <FbasicType type="S7f9fc743d420" imported_id="S7fdf4ad12e10" intent="in" is_class="true"/>
+    <FbasicType type="S7f9fc7431850" imported_id="S7fdf4ad12810" intent="in" is_class="true"/>
+    <FbasicType type="S7f9fc7431bc0" imported_id="S7fdf4ad12e10" intent="in" is_class="true"/>
+    <FfunctionType type="F7f9fc743ced0" return_type="C7f9fc743d550" is_recursive="true">
+      <params>
+        <name type="S7f9fc743d890" imported_id="S7fdf4ad25170">this</name>
+      </params>
+    </FfunctionType>
+    <FbasicType type="C7f9fc743d680" is_allocatable="true" ref="Fcharacter">
+      <len is_assumed_shape="true">
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc743d550" is_allocatable="true" ref="C7f9fc743d680"/>
+    <FbasicType type="S7f9fc743d890" imported_id="S7fdf4ad25170" intent="in" is_class="true"/>
+    <FbasicType type="S7f9fc7436870" imported_id="S7fdf4ad25170" intent="in" is_class="true"/>
+    <FbasicType type="C7f9fc743e3f0" ref="Fcharacter">
+      <len is_assumed_size="true">
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc743e600" is_public="true" is_parameter="true" ref="C7f9fc743e3f0"/>
+    <FbasicType type="C7f9fc743f0f0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7440480" is_public="true" is_parameter="true" ref="Fcharacter"/>
+    <FbasicType type="C7f9fc7445600" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7445810" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc7445f70" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7445de0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7446230" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc7446990" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7446800" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7446c50" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc74473b0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7447220" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7447670" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc7447dd0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7447c40" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7448090" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc74487f0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7448660" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7448ab0" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc7449210" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7449080" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc74494d0" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc7449c30" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7449aa0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7449ef0" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc744a650" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744a4c0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744a910" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc744b070" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744aee0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744b330" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc744ba90" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744b900" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744bd50" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc744c4b0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744c320" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744c770" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc744ced0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744cd40" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744d190" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc744d8f0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744d760" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744dbb0" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc744e310" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744e180" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744e5d0" is_public="true" is_parameter="true" ref="C7f9fc7445600"/>
+    <FbasicType type="C7f9fc744ed30" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">5</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744eba0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744fc20" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc744fe30" is_public="true" is_parameter="true" ref="C7f9fc744fc20"/>
+    <FbasicType type="C7f9fc7450590" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7450400" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">3</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7450850" is_public="true" is_parameter="true" ref="C7f9fc744fc20"/>
+    <FbasicType type="C7f9fc7450fb0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">4</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7450e20" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">3</FintConstant>
+      </len>
+    </FbasicType>
+    <FfunctionType type="F7f9fc7453670" return_type="Fvoid" is_public="true">
+      <params>
+        <name type="C7f9fc7454a60">mode</name>
+        <name type="C7f9fc7455390">message</name>
+        <name type="L7f9fc7455bc0">stderr</name>
+      </params>
+    </FfunctionType>
+    <FbasicType type="C7f9fc7454930" ref="Fcharacter">
+      <len is_assumed_size="true">
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7454a60" intent="in" ref="C7f9fc7454930"/>
+    <FbasicType type="C7f9fc7455260" ref="Fcharacter">
+      <len is_assumed_size="true">
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7455390" intent="in" ref="C7f9fc7455260"/>
+    <FbasicType type="L7f9fc7455bc0" intent="in" is_optional="true" ref="Flogical"/>
+    <FfunctionType type="F7f9fc7457460" return_type="Flogical"/>
+    <FfunctionType type="F7f9fc7459090" return_type="C7f9fc7458f60"/>
+    <FbasicType type="C7f9fc7458f60" ref="C7f9fc7455260"/>
+    <FbasicType type="C7f9fc7458a30" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">6</FintConstant>
+      </len>
+    </FbasicType>
+    <FfunctionType type="F7f9fc7459f00" return_type="Fvoid" is_public="true">
+      <params>
+        <name type="C7f9fc745b000">message</name>
+        <name type="L7f9fc745b830">stderr</name>
+      </params>
+    </FfunctionType>
+    <FbasicType type="C7f9fc745aed0" ref="Fcharacter">
+      <len is_assumed_size="true">
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc745b000" intent="in" ref="C7f9fc745aed0"/>
+    <FbasicType type="L7f9fc745b830" intent="in" is_optional="true" ref="Flogical"/>
+    <FfunctionType type="F7f9fc745cf90" return_type="Fvoid" is_public="true">
+      <params>
+        <name type="C7f9fc745dda0">message</name>
+      </params>
+    </FfunctionType>
+    <FbasicType type="C7f9fc745dc70" ref="Fcharacter">
+      <len is_assumed_size="true">
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc745dda0" intent="in" ref="C7f9fc745dc70"/>
+    <FfunctionType type="F7f9fc745f5f0" return_type="Fvoid" is_public="true">
+      <params>
+        <name type="C7f9fc74606f0">message</name>
+        <name type="L7f9fc7460f20">stderr</name>
+      </params>
+    </FfunctionType>
+    <FbasicType type="C7f9fc74605c0" ref="Fcharacter">
+      <len is_assumed_size="true">
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc74606f0" intent="in" ref="C7f9fc74605c0"/>
+    <FbasicType type="L7f9fc7460f20" intent="in" is_optional="true" ref="Flogical"/>
+    <FfunctionType type="F7f9fc74626b0" return_type="Fvoid" is_public="true">
+      <params>
+        <name type="C7f9fc74637b0">message</name>
+        <name type="L7f9fc7463fe0">stderr</name>
+      </params>
+    </FfunctionType>
+    <FbasicType type="C7f9fc7463680" ref="Fcharacter">
+      <len is_assumed_size="true">
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc74637b0" intent="in" ref="C7f9fc7463680"/>
+    <FbasicType type="L7f9fc7463fe0" intent="in" is_optional="true" ref="Flogical"/>
+    <FbasicType type="C7f9fc7464910" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">9</FintConstant>
+      </len>
+    </FbasicType>
+    <FfunctionType type="F7f9fc7465b00" return_type="Fvoid" is_public="true">
+      <params>
+        <name type="C7f9fc74670b0">routine</name>
+        <name type="C7f9fc74671e0">message</name>
+        <name type="L7f9fc7467a10">stderr</name>
+      </params>
+    </FfunctionType>
+    <FbasicType type="C7f9fc7466f80" ref="Fcharacter">
+      <len is_assumed_size="true">
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc74670b0" intent="in" ref="C7f9fc7466f80"/>
+    <FbasicType type="C7f9fc74671e0" intent="in" ref="C7f9fc7466f80"/>
+    <FbasicType type="L7f9fc7467a10" intent="in" is_optional="true" ref="Flogical"/>
+    <FbasicType type="C7f9fc7468a40" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">100</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7468c50" ref="C7f9fc7468a40"/>
+    <FfunctionType type="F7f9fc746a360" return_type="Fint"/>
+    <FfunctionType type="F7f9fc746aaa0" return_type="Fint"/>
+    <FfunctionType type="F7f9fc746c390" return_type="Fcharacter"/>
+    <FfunctionType type="F7f9fc746bf40" return_type="Fint"/>
+    <FfunctionType type="F7f9fc746d780" return_type="C7f9fc746e8f0"/>
+    <FbasicType type="C7f9fc746e8f0" ref="C7f9fc7466f80"/>
+    <FfunctionType type="F7f9fc746ea20" return_type="C7f9fc746e8f0"/>
+    <FbasicType type="C7f9fc746ecc0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc746e5f0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc746e280" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc746dbb0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc746d650" ref="C7f9fc7466f80"/>
+    <FbasicType type="C7f9fc746deb0" ref="C7f9fc7468a40"/>
+    <FfunctionType type="F7f9fc746fd30" return_type="Fvoid" is_public="true">
+      <params>
+        <name type="L7f9fc7470cb0">this</name>
+        <name type="C7f9fc7471660">message</name>
+      </params>
+    </FfunctionType>
+    <FbasicType type="L7f9fc7470cb0" intent="in" ref="Flogical"/>
+    <FbasicType type="C7f9fc7471530" ref="Fcharacter">
+      <len is_assumed_size="true">
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7471660" intent="in" is_optional="true" ref="C7f9fc7471530"/>
+    <FbasicType type="I7f9fc7451900" is_private="true" ref="Fint"/>
+    <FfunctionType type="F7f9fc7473da0" return_type="Flogical"/>
+    <FbasicType type="C7f9fc7472a80" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">40</FintConstant>
+      </len>
+    </FbasicType>
+    <FfunctionType type="F7f9fc74753a0" return_type="Fvoid" is_public="true">
+      <params>
+        <name type="S7f9fc7476750">a</name>
+        <name type="S7f9fc7476d50">b</name>
+        <name type="C7f9fc7477600">message</name>
+        <name type="L7f9fc7477d30">verbose</name>
+      </params>
+    </FfunctionType>
+    <FbasicType type="S7f9fc7476750" intent="in" is_class="true"/>
+    <FbasicType type="S7f9fc7476d50" intent="in" is_class="true"/>
+    <FbasicType type="C7f9fc74774d0" ref="Fcharacter">
+      <len is_assumed_size="true">
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7477600" is_optional="true" ref="C7f9fc74774d0"/>
+    <FbasicType type="L7f9fc7477d30" is_optional="true" ref="Flogical"/>
+    <FbasicType type="C7f9fc7478540" is_allocatable="true" ref="Fcharacter">
+      <len is_assumed_shape="true">
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7478750" is_allocatable="true" ref="C7f9fc7478540"/>
+    <FfunctionType type="F7f9fc7479710" return_type="Flogical"/>
+    <FfunctionType type="F7f9fc747dac0" return_type="Flogical"/>
+    <FbasicType type="C7f9fc747c3e0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747bf60" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747bd80" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747b9f0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747b810" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747b390" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">66</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747b1b0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">65</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747ae20" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">25</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747ac80" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">24</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747b000" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">40</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747bbd0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">40</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7480fd0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7480c40" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7480a60" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7480680" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc74804a0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7480130" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747ff50" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747fb70" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">54</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747f990" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">53</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747f620" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">41</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747f470" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">40</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc747f800" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">12</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7480310" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">11</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7480e20" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">40</FintConstant>
+      </len>
+    </FbasicType>
+    <FfunctionType type="F7f9fc74821f0" return_type="Fvoid" is_public="true">
+      <params>
+        <name type="S7f9fc74835a0">a</name>
+        <name type="S7f9fc7483ba0">b</name>
+        <name type="C7f9fc7484450">message</name>
+        <name type="L7f9fc7484b80">verbose</name>
+      </params>
+    </FfunctionType>
+    <FbasicType type="S7f9fc74835a0" intent="in" is_class="true"/>
+    <FbasicType type="S7f9fc7483ba0" intent="in" is_class="true"/>
+    <FbasicType type="C7f9fc7484320" ref="Fcharacter">
+      <len is_assumed_size="true">
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7484450" is_optional="true" ref="C7f9fc7484320"/>
+    <FbasicType type="L7f9fc7484b80" is_optional="true" ref="Flogical"/>
+    <FbasicType type="C7f9fc7485360" is_allocatable="true" ref="Fcharacter">
+      <len is_assumed_shape="true">
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7485570" is_allocatable="true" ref="C7f9fc7485360"/>
+    <FfunctionType type="F7f9fc7486530" return_type="Flogical"/>
+    <FfunctionType type="F7f9fc748a940" return_type="Flogical"/>
+    <FbasicType type="C7f9fc7489200" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7488d80" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7488ba0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7488810" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7488630" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc74881b0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">62</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7487fd0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">61</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7487c40" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">21</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7487aa0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">20</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7487e20" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">40</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc74889f0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">40</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc748de00" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc748da70" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc748d890" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc748d4b0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc748d2d0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc748cf60" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc748cd80" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc748c9a0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">54</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc748c7c0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">53</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc748c450" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">41</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc748c2a0" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">40</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc748c630" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">12</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc748d140" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">11</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc748dc50" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">40</FintConstant>
+      </len>
+    </FbasicType>
+    <FfunctionType type="F7f9fc748ed80" return_type="Fvoid" is_public="true">
+      <params>
+      </params>
+    </FfunctionType>
+    <FbasicType type="C7f9fc748f510" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">49</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7490800" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7490490" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">0</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7490060" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">9</FintConstant>
+      </len>
+    </FbasicType>
+    <FbasicType type="C7f9fc7490670" ref="Fcharacter">
+      <len>
+        <FintConstant type="Fint">12</FintConstant>
+      </len>
+    </FbasicType>
+  </typeTable>
+  <identifiers>
+    <id type="S7f9fc74094a0" imported_id="S7fc801d06890" sclass="ftype_name" original_name="lock_type" declared_in="iso_fortran_env">
+      <name>lock_type</name>
+    </id>
+    <id type="I7f9fc74230e0" sclass="flocal" original_name="atomic_int_kind" declared_in="iso_fortran_env">
+      <name>atomic_int_kind</name>
+    </id>
+    <id type="I7f9fc74232f0" sclass="flocal" original_name="atomic_logical_kind" declared_in="iso_fortran_env">
+      <name>atomic_logical_kind</name>
+    </id>
+    <id type="I7f9fc7423550" sclass="flocal" original_name="character_storage_size" declared_in="iso_fortran_env">
+      <name>character_storage_size</name>
+    </id>
+    <id type="I7f9fc74237b0" sclass="flocal" original_name="error_unit" declared_in="iso_fortran_env">
+      <name>error_unit</name>
+    </id>
+    <id type="I7f9fc7423a30" sclass="flocal" original_name="file_storage_size" declared_in="iso_fortran_env">
+      <name>file_storage_size</name>
+    </id>
+    <id type="I7f9fc7423cb0" sclass="flocal" original_name="input_unit" declared_in="iso_fortran_env">
+      <name>input_unit</name>
+    </id>
+    <id type="I7f9fc7423f30" sclass="flocal" original_name="iostat_end" declared_in="iso_fortran_env">
+      <name>iostat_end</name>
+    </id>
+    <id type="I7f9fc74241b0" sclass="flocal" original_name="iostat_eor" declared_in="iso_fortran_env">
+      <name>iostat_eor</name>
+    </id>
+    <id type="I7f9fc7424430" sclass="flocal" original_name="numeric_storage_size" declared_in="iso_fortran_env">
+      <name>numeric_storage_size</name>
+    </id>
+    <id type="I7f9fc74246b0" sclass="flocal" original_name="output_unit" declared_in="iso_fortran_env">
+      <name>output_unit</name>
+    </id>
+    <id type="I7f9fc7424930" sclass="flocal" original_name="iostat_inquire_internal_unit" declared_in="iso_fortran_env">
+      <name>iostat_inquire_internal_unit</name>
+    </id>
+    <id type="I7f9fc7424bb0" sclass="flocal" original_name="int8" declared_in="iso_fortran_env">
+      <name>int8</name>
+    </id>
+    <id type="I7f9fc7424e30" sclass="flocal" original_name="int16" declared_in="iso_fortran_env">
+      <name>int16</name>
+    </id>
+    <id type="I7f9fc74250b0" sclass="flocal" original_name="int32" declared_in="iso_fortran_env">
+      <name>int32</name>
+    </id>
+    <id type="I7f9fc7425330" sclass="flocal" original_name="int64" declared_in="iso_fortran_env">
+      <name>int64</name>
+    </id>
+    <id type="I7f9fc74255b0" sclass="flocal" original_name="logical8" declared_in="iso_fortran_env">
+      <name>logical8</name>
+    </id>
+    <id type="I7f9fc7425830" sclass="flocal" original_name="logical16" declared_in="iso_fortran_env">
+      <name>logical16</name>
+    </id>
+    <id type="I7f9fc7425ab0" sclass="flocal" original_name="logical32" declared_in="iso_fortran_env">
+      <name>logical32</name>
+    </id>
+    <id type="I7f9fc7425d30" sclass="flocal" original_name="logical64" declared_in="iso_fortran_env">
+      <name>logical64</name>
+    </id>
+    <id type="I7f9fc7425fb0" sclass="flocal" original_name="real32" declared_in="iso_fortran_env">
+      <name>real32</name>
+    </id>
+    <id type="I7f9fc7426230" sclass="flocal" original_name="real64" declared_in="iso_fortran_env">
+      <name>real64</name>
+    </id>
+    <id type="I7f9fc74264b0" sclass="flocal" original_name="real128" declared_in="iso_fortran_env">
+      <name>real128</name>
+    </id>
+    <id type="A7f9fc7426730" sclass="flocal" original_name="integer_kinds" declared_in="iso_fortran_env">
+      <name>integer_kinds</name>
+    </id>
+    <id type="A7f9fc74269b0" sclass="flocal" original_name="logical_kinds" declared_in="iso_fortran_env">
+      <name>logical_kinds</name>
+    </id>
+    <id type="A7f9fc7426c30" sclass="flocal" original_name="real_kinds" declared_in="iso_fortran_env">
+      <name>real_kinds</name>
+    </id>
+    <id type="I7f9fc7426eb0" sclass="flocal" original_name="c1" declared_in="iso_fortran_env">
+      <name>c1</name>
+    </id>
+    <id type="I7f9fc7427130" sclass="flocal" original_name="c2" declared_in="iso_fortran_env">
+      <name>c2</name>
+    </id>
+    <id type="I7f9fc74273b0" sclass="flocal" original_name="c3" declared_in="iso_fortran_env">
+      <name>c3</name>
+    </id>
+    <id type="I7f9fc7427630" sclass="flocal" original_name="c4" declared_in="iso_fortran_env">
+      <name>c4</name>
+    </id>
+    <id type="A7f9fc74278b0" sclass="flocal" original_name="character_kinds" declared_in="iso_fortran_env">
+      <name>character_kinds</name>
+    </id>
+    <id type="F7f9fc7427bf0" sclass="ffunc" original_name="compiler_options" declared_in="iso_fortran_env">
+      <name>compiler_options</name>
+    </id>
+    <id type="F7f9fc7427f30" sclass="ffunc" original_name="compiler_version" declared_in="iso_fortran_env">
+      <name>compiler_version</name>
+    </id>
+    <id type="F7f9fc743cc00" sclass="ffunc" original_name="object_equal" declared_in="self_object">
+      <name>object_equal</name>
+    </id>
+    <id type="F7f9fc743ced0" sclass="ffunc" original_name="object_string" declared_in="self_object">
+      <name>object_string</name>
+    </id>
+    <id type="C7f9fc743e600" sclass="flocal" original_name="nl" declared_in="self_assert">
+      <name>nl</name>
+    </id>
+    <id type="C7f9fc7440480" sclass="flocal" original_name="esc" declared_in="self_assert">
+      <name>esc</name>
+    </id>
+    <id type="C7f9fc7445810" sclass="flocal" original_name="mode_black" declared_in="self_assert">
+      <name>mode_black</name>
+    </id>
+    <id type="C7f9fc7446230" sclass="flocal" original_name="mode_red" declared_in="self_assert">
+      <name>mode_red</name>
+    </id>
+    <id type="C7f9fc7446c50" sclass="flocal" original_name="mode_green" declared_in="self_assert">
+      <name>mode_green</name>
+    </id>
+    <id type="C7f9fc7447670" sclass="flocal" original_name="mode_yellow" declared_in="self_assert">
+      <name>mode_yellow</name>
+    </id>
+    <id type="C7f9fc7448090" sclass="flocal" original_name="mode_blue" declared_in="self_assert">
+      <name>mode_blue</name>
+    </id>
+    <id type="C7f9fc7448ab0" sclass="flocal" original_name="mode_purple" declared_in="self_assert">
+      <name>mode_purple</name>
+    </id>
+    <id type="C7f9fc74494d0" sclass="flocal" original_name="mode_aqua" declared_in="self_assert">
+      <name>mode_aqua</name>
+    </id>
+    <id type="C7f9fc7449ef0" sclass="flocal" original_name="mode_dark_grey" declared_in="self_assert">
+      <name>mode_dark_grey</name>
+    </id>
+    <id type="C7f9fc744a910" sclass="flocal" original_name="mode_peach" declared_in="self_assert">
+      <name>mode_peach</name>
+    </id>
+    <id type="C7f9fc744b330" sclass="flocal" original_name="mode_light_green" declared_in="self_assert">
+      <name>mode_light_green</name>
+    </id>
+    <id type="C7f9fc744bd50" sclass="flocal" original_name="mode_light_yellow" declared_in="self_assert">
+      <name>mode_light_yellow</name>
+    </id>
+    <id type="C7f9fc744c770" sclass="flocal" original_name="mode_light_blue" declared_in="self_assert">
+      <name>mode_light_blue</name>
+    </id>
+    <id type="C7f9fc744d190" sclass="flocal" original_name="mode_pink" declared_in="self_assert">
+      <name>mode_pink</name>
+    </id>
+    <id type="C7f9fc744dbb0" sclass="flocal" original_name="mode_light_aqua" declared_in="self_assert">
+      <name>mode_light_aqua</name>
+    </id>
+    <id type="C7f9fc744e5d0" sclass="flocal" original_name="mode_pearl_white" declared_in="self_assert">
+      <name>mode_pearl_white</name>
+    </id>
+    <id type="C7f9fc744fe30" sclass="flocal" original_name="mode_bold" declared_in="self_assert">
+      <name>mode_bold</name>
+    </id>
+    <id type="C7f9fc7450850" sclass="flocal" original_name="mode_normal" declared_in="self_assert">
+      <name>mode_normal</name>
+    </id>
+    <id type="F7f9fc7453670" sclass="ffunc" original_name="print_mode" declared_in="self_assert">
+      <name>print_mode</name>
+    </id>
+    <id type="F7f9fc7459f00" sclass="ffunc" original_name="print_error" declared_in="self_assert">
+      <name>print_error</name>
+    </id>
+    <id type="F7f9fc745cf90" sclass="ffunc" original_name="print_verbose" declared_in="self_assert">
+      <name>print_verbose</name>
+    </id>
+    <id type="F7f9fc745f5f0" sclass="ffunc" original_name="print_footer" declared_in="self_assert">
+      <name>print_footer</name>
+    </id>
+    <id type="F7f9fc74626b0" sclass="ffunc" original_name="print_summary" declared_in="self_assert">
+      <name>print_summary</name>
+    </id>
+    <id type="F7f9fc7465b00" sclass="ffunc" original_name="print_routine" declared_in="self_assert">
+      <name>print_routine</name>
+    </id>
+    <id type="F7f9fc746fd30" sclass="ffunc" original_name="assert" declared_in="self_assert">
+      <name>assert</name>
+    </id>
+    <id type="F7f9fc74753a0" sclass="ffunc" original_name="assert_equal" declared_in="self_assert">
+      <name>assert_equal</name>
+    </id>
+    <id type="F7f9fc74821f0" sclass="ffunc" original_name="assert_not_equal" declared_in="self_assert">
+      <name>assert_not_equal</name>
+    </id>
+    <id type="F7f9fc748ed80" sclass="ffunc" original_name="assert_print_count" declared_in="self_assert">
+      <name>assert_print_count</name>
+    </id>
+  </identifiers>
+  <declarations>
+    <varDecl>
+      <name type="I7f9fc74230e0">atomic_int_kind</name>
+      <value>
+        <FintConstant type="Fint">8</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc74232f0">atomic_logical_kind</name>
+      <value>
+        <FintConstant type="Fint">8</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7423550">character_storage_size</name>
+      <value>
+        <FintConstant type="Fint">8</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc74237b0">error_unit</name>
+      <value>
+        <FintConstant type="Fint">0</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7423a30">file_storage_size</name>
+      <value>
+        <FintConstant type="Fint">8</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7423cb0">input_unit</name>
+      <value>
+        <FintConstant type="Fint">5</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7423f30">iostat_end</name>
+      <value>
+        <FintConstant type="Fint">-1</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc74241b0">iostat_eor</name>
+      <value>
+        <FintConstant type="Fint">-2</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7424430">numeric_storage_size</name>
+      <value>
+        <FintConstant type="Fint">32</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc74246b0">output_unit</name>
+      <value>
+        <FintConstant type="Fint">6</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7424930">iostat_inquire_internal_unit</name>
+      <value>
+        <FintConstant type="Fint">99</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7424bb0">int8</name>
+      <value>
+        <FintConstant type="Fint">1</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7424e30">int16</name>
+      <value>
+        <FintConstant type="Fint">2</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc74250b0">int32</name>
+      <value>
+        <FintConstant type="Fint">4</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7425330">int64</name>
+      <value>
+        <FintConstant type="Fint">8</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc74255b0">logical8</name>
+      <value>
+        <FintConstant type="Fint">1</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7425830">logical16</name>
+      <value>
+        <FintConstant type="Fint">2</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7425ab0">logical32</name>
+      <value>
+        <FintConstant type="Fint">4</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7425d30">logical64</name>
+      <value>
+        <FintConstant type="Fint">8</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7425fb0">real32</name>
+      <value>
+        <FintConstant type="Fint">4</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7426230">real64</name>
+      <value>
+        <FintConstant type="Fint">8</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc74264b0">real128</name>
+      <value>
+        <FintConstant type="Fint">16</FintConstant>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="A7f9fc7426730">integer_kinds</name>
+    </varDecl>
+    <varDecl>
+      <name type="A7f9fc74269b0">logical_kinds</name>
+    </varDecl>
+    <varDecl>
+      <name type="A7f9fc7426c30">real_kinds</name>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7426eb0">c1</name>
+      <value>
+        <functionCall type="Fint" is_intrinsic="true">
+          <name>selected_char_kind</name>
+          <arguments>
+            <FcharacterConstant type="C7f9fc7417410">ascii</FcharacterConstant>
+          </arguments>
+        </functionCall>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7427130">c2</name>
+      <value>
+        <functionCall type="Fint" is_intrinsic="true">
+          <name>selected_char_kind</name>
+          <arguments>
+            <FcharacterConstant type="C7f9fc7418000">JIS_0213</FcharacterConstant>
+          </arguments>
+        </functionCall>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc74273b0">c3</name>
+      <value>
+        <functionCall type="Fint" is_intrinsic="true">
+          <name>selected_char_kind</name>
+          <arguments>
+            <FcharacterConstant type="C7f9fc7418a50">UCS_2</FcharacterConstant>
+          </arguments>
+        </functionCall>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="I7f9fc7427630">c4</name>
+      <value>
+        <functionCall type="Fint" is_intrinsic="true">
+          <name>selected_char_kind</name>
+          <arguments>
+            <FcharacterConstant type="C7f9fc74194a0">ISO_10646</FcharacterConstant>
+          </arguments>
+        </functionCall>
+      </value>
+    </varDecl>
+    <varDecl>
+      <name type="A7f9fc74278b0">character_kinds</name>
+    </varDecl>
+    <varDecl lineno="12" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc743e600">nl</name>
+      <value>
+        <functionCall type="Fcharacter" is_intrinsic="true">
+          <name>new_line</name>
+          <arguments>
+            <FcharacterConstant type="C7f9fc743f0f0"></FcharacterConstant>
+          </arguments>
+        </functionCall>
+      </value>
+    </varDecl>
+    <varDecl lineno="13" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc7440480">esc</name>
+      <value>
+        <functionCall type="Fcharacter" is_intrinsic="true">
+          <name>achar</name>
+          <arguments>
+            <FintConstant type="Fint">27</FintConstant>
+          </arguments>
+        </functionCall>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc7445810">mode_black</name>
+      <value>
+        <FconcatExpr type="C7f9fc7445f70">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc7445de0">[30m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc7446230">mode_red</name>
+      <value>
+        <FconcatExpr type="C7f9fc7446990">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc7446800">[31m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc7446c50">mode_green</name>
+      <value>
+        <FconcatExpr type="C7f9fc74473b0">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc7447220">[32m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc7447670">mode_yellow</name>
+      <value>
+        <FconcatExpr type="C7f9fc7447dd0">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc7447c40">[33m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc7448090">mode_blue</name>
+      <value>
+        <FconcatExpr type="C7f9fc74487f0">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc7448660">[34m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc7448ab0">mode_purple</name>
+      <value>
+        <FconcatExpr type="C7f9fc7449210">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc7449080">[35m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc74494d0">mode_aqua</name>
+      <value>
+        <FconcatExpr type="C7f9fc7449c30">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc7449aa0">[36m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc7449ef0">mode_dark_grey</name>
+      <value>
+        <FconcatExpr type="C7f9fc744a650">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc744a4c0">[90m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc744a910">mode_peach</name>
+      <value>
+        <FconcatExpr type="C7f9fc744b070">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc744aee0">[91m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc744b330">mode_light_green</name>
+      <value>
+        <FconcatExpr type="C7f9fc744ba90">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc744b900">[92m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc744bd50">mode_light_yellow</name>
+      <value>
+        <FconcatExpr type="C7f9fc744c4b0">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc744c320">[93m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc744c770">mode_light_blue</name>
+      <value>
+        <FconcatExpr type="C7f9fc744ced0">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc744cd40">[94m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc744d190">mode_pink</name>
+      <value>
+        <FconcatExpr type="C7f9fc744d8f0">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc744d760">[95m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc744dbb0">mode_light_aqua</name>
+      <value>
+        <FconcatExpr type="C7f9fc744e310">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc744e180">[96m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="15" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc744e5d0">mode_pearl_white</name>
+      <value>
+        <FconcatExpr type="C7f9fc744ed30">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc744eba0">[97m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="32" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc744fe30">mode_bold</name>
+      <value>
+        <FconcatExpr type="C7f9fc7450590">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc7450400">[1m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+    <varDecl lineno="32" file="/var/folders/pm/5w7885tn1j70szfgqc924g980000gn/T/tmp.n5fth5Eo/self_assert.f90">
+      <name type="C7f9fc7450850">mode_normal</name>
+      <value>
+        <FconcatExpr type="C7f9fc7450fb0">
+          <functionCall type="Fcharacter" is_intrinsic="true">
+            <name>achar</name>
+            <arguments>
+              <FintConstant type="Fint">27</FintConstant>
+            </arguments>
+          </functionCall>
+          <FcharacterConstant type="C7f9fc7450e20">[0m</FcharacterConstant>
+        </FconcatExpr>
+      </value>
+    </varDecl>
+  </declarations>
+  <interfaceDecls>
+  </interfaceDecls>
+  <aux_info>
+  </aux_info>
+</OmniFortranModule>
