@@ -1,5 +1,5 @@
 sudo: required
-dist: trusty
+dist: xenial
 language: cpp
 git:
   submodules: false
@@ -17,18 +17,10 @@ matrix:
         - gcc-7
         - g++-7
         - gfortran-7
-        - cabal-install
         - ghc
-cache:
-  directories:
-  - "$HOME/.ghc"
-  - "$HOME/.cabal"
-  - "$HOME/.stack"
 before_install:
 - git submodule init
 - git submodule update
-- cabal update && cabal install ShellCheck
-- export PATH=$PATH:$HOME/.cabal/bin
 - shellcheck --version
 script:
 - cd omni-compiler
