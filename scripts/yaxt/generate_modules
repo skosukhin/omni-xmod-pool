@@ -3,7 +3,7 @@
 ###
 
 yaxt_dir='/path/to/yaxt'
-yaxt_ver='0.7.0'
+yaxt_ver='0.9.0'
 
 ###
 
@@ -17,8 +17,8 @@ output_dir="${root_dir}/yaxt/${yaxt_ver}"
 FPP='gfortran -E -cpp'
 FPP_FLAGS='-DHAVE_VOLATILE -DHAVE_FC_LOGICAL_INTEROP -DHAVE_FC_LOGICAL_C_BOOL -DHAVE_FC_PTR_BOUND_REMAP -DXT_MPI_AINT_KIND=c_long -DXT_MPI_FINT_FC_KIND=c_int -DXT_INT_FC_KIND=c_int -DXT_INT_FC_MPIDT=MPI_INTEGER4 -DSIZEOF_XT_INT=4'
 
-OMNI='F_Front'
-OMNI_FLAGS="-M ${output_dir} -M ${root_dir}/mpi/3.0"
+OMNI="${root_dir}/omni-compiler/F-FrontEnd/src/F_Front"
+OMNI_FLAGS="-M ${output_dir} -M ${root_dir}/mpi/3.0 -M ${root_dir}/omni-compiler/F-FrontEnd/src/fincludes"
 
 files='
 xt_mpi_f.f90
